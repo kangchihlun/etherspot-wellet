@@ -246,6 +246,7 @@ const SignIn = ({ onWeb3ProviderSet, onWeb3AuthInstanceSet }: SignInProps) => {
           rpcTarget: process.env.REACT_APP_RPC_TARGET,
         },
         storageKey: 'local',
+        web3AuthNetwork: "testnet",
       });
 
       const openLoginAdapter = new OpenloginAdapter({
